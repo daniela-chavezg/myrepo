@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Lab 02</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./reset.css">
   </head>
   <body>
     <!--
@@ -13,7 +14,7 @@
     <header>
     <nav>
       <ul class="links">
-        <li><a href="./index.html">Daniela Chavez</a></li>
+        <li id="logo"><a href="./index.html">Daniela Chavez</a></li>
         <li><a href="./resume.html">Resume</a></li>
         <li><a href="./projects.html">Projects</a></li>
         <li><a href="./contact.html">Contact</a></li>
@@ -21,13 +22,16 @@
     </nav>
   </header>
 
-    <main>
+    <main class="main-layout-1">
       <div class="about">
-        <h1>Daniela Chavez</h1>
-        <p><span>Hello! Hey there! I'm Daniela Chavez, 
+        <div class="info">
+          <h1 class="sec-heading">Daniela Chavez</h1>
+        <p>
+          Hello! I'm Daniela Chavez, 
             a first-generation student at UAB studying computer science and graphic design. I currently work on front-end projects at the UAB Student Affairs Marketing and Communications Office. I love blending my technical skills with creativity to bring ideas to life.
            Let's connect and share our passion for technology and design!</p>
-        <img>
+          </div>
+           <img src="./assets/imgs/daniela-pic.jpg" alt="picture of daniela" width="300">
       </div>
     </main>
 

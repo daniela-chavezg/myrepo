@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Rozha+One&display=swap');
+
+
+h1, h2, h3, h4{
+    font-family: 'Rozha One', serif;
+    font-weight: normal;
+}
+
+h1, h2, h3{
+    color: rgb(112, 100, 80);
+}
+
+p, a{
+    color: rgb(163, 147, 121);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: rgb(252, 250, 244);
+    
+}
+
+main{
+    flex: 1;
+}
+
+
+nav .links{
+    display: flex;
+    align-content: center;
+    justify-content: end;
+    border-bottom: 1px solid rgb(112, 100, 80);
+}   
+
+.links li{
+    padding: 15px;
+    font-family: 'Rozha One', serif;
+}
+
+.links a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#logo{
+    margin-right: auto;
+    
+}
+
+#logo a{
+    color: rgb(112, 100, 80);
+}
+
+footer p{
+    padding: 20px;
+    text-align: center;
+}
+
+.sec-heading{
+    text-align: center;
+    margin: 30px;
+}
+
+/*ABOUT ME*/
+.main-layout-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+ 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+
+
+
+.info{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+
+/*RESUME*/
+.resume object{
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    height: 500px;
+}
+
+
+/* PROJECTS*/
+
+.cs-projects h2, .art-projects h2{
+    text-align: center;
+    margin: 20px;
+}
+
+.cs-projects, .art-projects{
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+
+
+.cards{
+    display: flex;   
+    flex-direction: column;
+}
+
+.cards div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(88, 78, 62);
+    padding: 10px;
+}
+
+.cards h3{
+    margin: 5px;
+}
+
+/* CONTACT ME */
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    
+}
+
+.contact form{
+    border: 1px solid rgb(88, 78, 62);
+    padding: 15px;
+}
+
+.contact i{
+    color: rgb(88, 78, 62)
+}
+
+.cards div:nth-child(2){
+    border-top: none;
+    border-bottom: none;
+}
+
+
+@media only screen and (min-width: 680px) {
+    .about{
+        flex-direction: row;
+    }
+
+    .info{
+        align-items: left;
+        text-align: left;
+    }
+
+    .info h1{
+        margin: 0px;
+        text-align: left;
+    }
+
+    .cards{
+        flex-direction: row;
+    }
+
+    .cards div:nth-child(2){
+        border: 1px solid rgb(88, 78, 62);
+        border-right: none;
+        border-left: none;
+    }
+  }
